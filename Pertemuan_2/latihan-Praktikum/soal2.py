@@ -8,7 +8,10 @@
 
 barang = ("b001", "laptop gaming", 15000000)
 (kode,nama,harga) = barang
+k = list(barang)
+k[2] = 14000000
+barang = tuple(k)
 # barang[2]='14000000'
 #karena tuple bersifat unchangeable. tidak bisa diganti
-print(harga)
+print(barang)
 
