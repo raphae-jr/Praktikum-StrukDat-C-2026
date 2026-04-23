@@ -1,20 +1,20 @@
-browser_history = []
+stack = []
+stack.append("idnonesia emas 2045")
+stack.append("prabowo 2 periode")
+stack.append("indonesia emas 2050")
+stack.append("amerika runtuh")
 
-def is_empty(stack):
-    return len(stack) == 0
+print("Stack: ",stack)
 
-def push(stack, url):
-    stack.append(url)
+isEmpty = not bool(stack)
+print("isEmpty: ", isEmpty)
 
-def pop(stack):
-    if is_empty(stack):
-        return "Riwayat kosong"
-    return stack.pop()
+popelement = stack.pop()
+print("pop: ",popelement)
 
-def peek(stack):
-    if is_empty(stack):
-        return None
-    return stack[-1]
+topelement = stack[-1]
+print("peek: ",topelement)
 
-def size(stack):
-    return len(stack)
+print("riwayat terbaru: ",stack)
+
+print("Jumlah riwayat: ", len(stack))
